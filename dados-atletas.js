@@ -23,6 +23,7 @@ class Atleta {
 const imc = this.peso / (this.altura * this.altura);
 return imc.toFixed(2);
   }
+  // Também pode usar o for (let i = 0; i < this.notas.length; i++){}
   calculaMediaValida(){
  let notasValidas = this.notas.filter(nota => nota >= 0 && nota <= 10);
     const media = notasValidas.reduce((sum, nota) => sum + nota, 0) / notasValidas.length;
