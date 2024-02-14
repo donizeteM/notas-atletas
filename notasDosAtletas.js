@@ -20,15 +20,15 @@ let atletas = [
   let nomeDosAtletas = 0;
   let mediaValida = 0;
   let notasObtidas = 0;
-  
+  // "usado para atualizar ou incrementar a variável do contador".
   for (let i = 0; i < atletas.length; i++) {
     nomeDosAtletas = atletas.map(function (nomes) {
       return nomes.nome;
     });
   
     notasObtidas = atletas.map(function (notas) {
-      let total = notas.notas.slice(); // Correção: 'nota' para 'notas'
-      total.sort(function (a, b) {
+      let total = notas.notas.slice(); //"Slice(): Percorre a string ou o array para selecionar a faixa de valores determinada por parâmetro"
+      total.sort(function (a, b) { //"Ordena as linhas no intervalo de dados especificado de acordo com as colunas principais apresentadas seguidas pela sequência de ordenação."
         return a - b;
       });
       return total;
